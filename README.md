@@ -80,7 +80,7 @@ CREATE TABLE LOCATIONS (
                         );
 
 
-# Load all the tables with the data available in the CSV files shared below.
+**Load all the tables with the data available in the CSV files shared below.**
 
 Departments.csv --> [](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork/labs/Labs_Coursera_V5/datasets/HR_Database/Departments.csv)
 
@@ -309,7 +309,7 @@ INSERT INTO ShoeShop VALUES
 SELECT * FROM ShoeShop;
 
 
-# Sample Exercise
+# CREATE TRANSACTION
 
 
 Example of committing and rolling back a transaction.
@@ -369,6 +369,13 @@ The last UPDATE statement tries to buy Rose a pair of Trainers, but her balance 
 
 
 
+
+
+# 4--JOINS
+
+**USING SAME TABLES FROM THE 'HR' DATABASE WHICH ARE USED EARLIER FOR VIEWS CONCEPT**
+
+**1) Retrieve the names and job start dates of all employees who work for department number 5.**
 
 
 
