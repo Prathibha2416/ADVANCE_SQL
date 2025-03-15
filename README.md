@@ -504,7 +504,7 @@ AND E.SEX = 'M';
 
 **SQL CODE IS AVAILABLE AS FILES UNDER THE NAMES:**
 
-1) CHICAGO_CRIME.SQL
+1) [CHICAGO_CRIME.SQL](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_crime.sql)
 
 2) CHICAGO_PUBLI
 
