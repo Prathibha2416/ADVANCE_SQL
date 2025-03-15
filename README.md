@@ -498,7 +498,7 @@ ON E.DEP_ID = D.DEPT_ID_DEP
 
 AND E.SEX = 'M';
 
-# PRACTICE JOINS 
+# Exercise 1: Using Joins 
 
 # USING CHICAGO DATA FOR ANALYSIS
 
@@ -536,6 +536,41 @@ SELECT CC.CASE_NUMBER, CC.PRIMARY_TYPE, CC.LOCATION_DESCRIPTION, PS.COMMUNITY_AR
  WHERE CC.LOCATION_DESCRIPTION LIKE '%SCHOOL%';
  
  
+
+# Exercise 2: Creating a View
+
+For privacy reasons, you have been asked to create a view that enables users to select just the school name and the icon fields from the CHICAGO_PUBLIC_SCHOOLS table. By providing a view, you can ensure that users cannot see the actual scores given to a school, just the icon associated with their score. You should define new names for the view columns to obscure the use of scores and icons in the original table.
+
+
+**Write and execute a SQL statement to create a view showing the columns listed**
+
+Column name in view
+
+	School_Name
+	Safety_Rating
+	Family_Rating
+	Environment_Rating
+	Instruction_Rating
+	Leaders_Rating
+	Teachers_Rating
+
+
+
+CREATE VIEW STUDEN_ICONS_INFO (School_Name, Safety_Rating, Family_Rating, Environment_Rating, Instruction_Rating, Leaders_Rating, Teachers_Rating) AS
+
+SELECT NAME_OF_SCHOOL, Safety_Icon, Family_Involvement_Icon, Environment_Icon, Instruction_Icon, Leaders_Icon, Teachers_Icon
+
+FROM chicago_public_schools;
+
+
+SELECT * FROM STUDEN_ICONS_INFO;
+
+**FOR RESULTS REFER IMAGE IN BELOW LINK**
+
+
+
+
+
 
 
 
