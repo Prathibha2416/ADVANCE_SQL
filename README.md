@@ -506,6 +506,8 @@ AND E.SEX = 'M';
 
 1) [CHICAGO_CRIME.SQL](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_crime.sql)
 
-2) CHICAGO_PUBLI
+2) [CHICAGO_PUBLIC_SCHOOL.SQL](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_public_schools.sql)
+
+3) 
 
 
