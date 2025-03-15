@@ -502,12 +502,40 @@ AND E.SEX = 'M';
 
 # USING CHICAGO DATA FOR ANALYSIS
 
-**SQL CODE IS AVAILABLE AS FILES UNDER THE NAMES:**
+**SQL CODE IS AVAILABLE IN BELOW GIVEN LINKS:**
 
 1) [CHICAGO_CRIME.SQL](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_crime.sql)
 
 2) [CHICAGO_PUBLIC_SCHOOL.SQL](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_public_schools.sql)
 
-3) 
+3) [CHICAGO_SOCIAL_ECONOMIC.SQL ](https://github.com/Prathibha2416/ADVANCE_SQL/blob/main/chicago_socioeconomic_data.sql)
+
+
+**1) Write and execute a SQL query to list the school names, community names and average attendance for communities with a hardship index of 98.**
+
+SELECT PS.NAME_OF_SCHOOL, PS.COMMUNITY_AREA_NAME, PS.AVERAGE_STUDENT_ATTENDANCE, CS.HARDSHIP_INDEX
+
+FROM chicago_public_schools AS PS 
+
+INNER JOIN chicago_socioeconomic_data AS CS 
+
+ON PS.COMMUNITY_AREA_NUMBER = CS.COMMUNITY_AREA_NUMBER
+
+WHERE CS.HARDSHIP_INDEX = '98';
+
+**2) Write and execute a SQL query to list all crimes that took place at a school. Include case number, crime type and community name.**
+
+SELECT CC.CASE_NUMBER, CC.PRIMARY_TYPE, CC.LOCATION_DESCRIPTION, PS.COMMUNITY_AREA_NAME
+ 
+ FROM chicago_crime AS CC
+ 
+ LEFT OUTER JOIN chicago_public_schools AS PS
+ 
+ ON CC.COMMUNITY_AREA_NUMBER = PS.COMMUNITY_AREA_NUMBER 
+ 
+ WHERE CC.LOCATION_DESCRIPTION LIKE '%SCHOOL%';
+ 
+ 
+
 
 
